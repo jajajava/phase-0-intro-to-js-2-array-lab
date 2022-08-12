@@ -78,3 +78,60 @@ describe('index.js', function () {
   });
 });
 
+
+const cats = ["Milo", "Otis", "Garfield"]
+console.log(cats)
+
+
+
+function destructivelyAppendCat(name){
+  cats.push(name)
+}
+destructivelyAppendCat("Ralph")
+
+function destructivelyPrependCat(name){
+  cats.unshift(name)
+}
+destructivelyPrependCat("Bob")
+
+function destructivelyRemoveLastCat(){
+  cats.pop()
+}
+destructivelyRemoveLastCat()
+
+function destructivelyRemoveFirstCat(){
+  cats.shift()
+}
+destructivelyRemoveFirstCat()
+
+/////////////////////////////
+
+
+
+function appendCat(name){
+  cats.slice(0)
+  cats.push(name)
+    
+}
+console.log(appendCat("Broom"))
+
+
+function prependCat(name){
+  cats.slice(0)
+  cats.unshift(name)
+}
+prependCat("Arnold")
+
+function removeLastCat(){
+  cats.slice(0)
+  cats.pop()
+}
+removeLastCat()
+
+function removeFirstCat(){
+  cats.slice(0)
+  cats.shift()
+}
+removeFirstCat()
+
+
